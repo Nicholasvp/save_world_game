@@ -7,6 +7,6 @@ class VisibleProvider extends ChangeNotifier {
   void changeVisibility() {
     isVisible == true ? isVisible = false : isVisible = true;
     isVisible_ == false ? isVisible_ = true : isVisible_ = false;
-    print('Olá');
+    notifyListeners();
   }
 }
