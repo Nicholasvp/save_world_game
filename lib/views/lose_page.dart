@@ -5,8 +5,14 @@ class LosePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Icon(Icons.restart_alt),
+    return Scaffold(
+      body: Center(
+        child: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.restart_alt)),
+      ),
     );
   }
 }

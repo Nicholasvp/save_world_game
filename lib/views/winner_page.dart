@@ -5,8 +5,14 @@ class WinnerPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
-      child: Center(child: Icon(Icons.emoji_events_rounded)),
+    return Scaffold(
+      body: Center(
+        child: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.emoji_events_rounded)),
+      ),
     );
   }
 }

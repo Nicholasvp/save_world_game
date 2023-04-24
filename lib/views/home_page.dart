@@ -28,13 +28,6 @@ class _HomePageState extends State<HomePage> {
             visible: visibility.isVisible_,
             child: Questions(),
           ),
-          ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  visibility.changeVisibility();
-                });
-              },
-              child: const Text('Avançar'))
         ],
       ),
     );

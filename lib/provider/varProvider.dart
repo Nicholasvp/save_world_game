@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:save_world_game/views/winner_page.dart';
 
 class VarProvider extends ChangeNotifier {
   double contamination = 0.50;
